@@ -1,0 +1,16 @@
+<hello name="{{ name }}"></hello>
+<p>
+  <button class="btn btn primary"
+  (click)="onlyOdd=!onlyOdd"> Show Only Odd Numbers</button>
+</p>
+<br>
+<br>
+<ul class="list-group">
+  <!-- We cannot have more than one structual directive in an element 
+    i.e <li *ngFor="let number of Numbers" *ngIf="nmber%2==0></li>"
+  -->
+  <li *ngFor="let number of Numbers" >
+    {{number}}
+  </li>
+</ul>
+<p appHighlight> this is an example of basice attribute directive<p>
