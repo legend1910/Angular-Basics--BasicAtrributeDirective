@@ -13,6 +13,8 @@ export class BasicHighlighter implements OnInit
 
 ngOnInit()
 {
+  //Note: It's not a good practice to directly acess your elements
+
 this.element.nativeElement.style.backgroundColor='green';
 }
 }
